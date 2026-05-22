@@ -1,65 +1,75 @@
-import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
+    <div className="min-h-screen px-6 py-16 sm:px-12 lg:px-24">
+      <section className="max-w-4xl mx-auto pt-20 pb-24">
+        <h1 className="text-5xl sm:text-7xl font-bold tracking-tight">
+          Calynix
+        </h1>
+        <p className="mt-6 text-xl sm:text-2xl text-foreground/70 max-w-2xl">
+          A creative studio building games, software, and online experiences.
+        </p>
+        <p className="mt-4 text-base text-foreground/60 max-w-2xl">
+          Calynix Ltd is the home of Calynix Games, BestMostLast, and future
+          digital ventures. Founded in 2026, registered in England &amp; Wales.
+        </p>
+      </section>
+
+      <section className="max-w-4xl mx-auto py-16 border-t border-foreground/10">
+        <h2 className="text-2xl font-semibold mb-8">Our brands</h2>
+        <div className="grid sm:grid-cols-2 gap-6">
+          <div className="p-6 rounded-lg border border-foreground/10">
+            <h3 className="text-lg font-semibold">Calynix Games</h3>
+            <p className="mt-2 text-sm text-foreground/70">
+              Mobile games for iOS. FIBBY and Reveal coming soon to the App
+              Store.
+            </p>
+            <span className="mt-3 inline-block text-xs uppercase tracking-wide text-foreground/50">
+              In development
+            </span>
+          </div>
           <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            href="https://bestmostlast.com"
             target="_blank"
             rel="noopener noreferrer"
+            className="p-6 rounded-lg border border-foreground/10 hover:border-foreground/30 transition-colors"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
+            <h3 className="text-lg font-semibold">BestMostLast →</h3>
+            <p className="mt-2 text-sm text-foreground/70">
+              Stats, charts, and rankings for sports, music, and the things
+              people argue about.
+            </p>
+            <span className="mt-3 inline-block text-xs uppercase tracking-wide text-foreground/50">
+              bestmostlast.com
+            </span>
           </a>
         </div>
-      </main>
+      </section>
+
+      <section className="max-w-4xl mx-auto py-16 border-t border-foreground/10">
+        <h2 className="text-2xl font-semibold mb-4">Contact</h2>
+        <p className="text-foreground/70">
+          For business and general enquiries:{" "}
+          <a
+            href="mailto:info@calynix.com"
+            className="underline hover:no-underline"
+          >
+            info@calynix.com
+          </a>
+        </p>
+        <div className="mt-6 flex gap-6 text-sm text-foreground/60">
+          <Link href="/privacy" className="hover:text-foreground">
+            Privacy
+          </Link>
+          <Link href="/support" className="hover:text-foreground">
+            Support
+          </Link>
+          <Link href="/terms" className="hover:text-foreground">
+            Terms
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }
