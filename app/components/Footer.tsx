@@ -7,14 +7,16 @@ export default function Footer() {
         <div>
           <p className="font-semibold text-foreground">Calynix Ltd</p>
           <p className="mt-1">
-            Registered in England &amp; Wales. Company No. [pending
-            incorporation].
+            Registered in England &amp; Wales. Company No. 17245007.
           </p>
           <p>71-75 Shelton Street, Covent Garden, London, WC2H 9JQ.</p>
         </div>
         <div className="flex gap-6">
           <Link href="/" className="hover:text-foreground">
             Home
+          </Link>
+          <Link href="/games" className="hover:text-foreground">
+            Games
           </Link>
           <Link href="/privacy" className="hover:text-foreground">
             Privacy
