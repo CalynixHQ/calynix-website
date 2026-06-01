@@ -1,12 +1,12 @@
 import Link from "next/link";
+import Wordmark from "./components/Wordmark";
 
 export default function Home() {
   return (
     <div className="min-h-screen px-6 py-16 sm:px-12 lg:px-24">
       <section className="max-w-4xl mx-auto pt-20 pb-24">
-        <h1 className="text-5xl sm:text-7xl font-bold tracking-tight">
-          Calynix
-        </h1>
+        <h1 className="sr-only">Calynix</h1>
+        <Wordmark className="h-16 sm:h-24 w-auto" />
         <p className="mt-6 text-xl sm:text-2xl text-foreground/70 max-w-2xl">
           A creative studio building games, software, and online experiences.
         </p>

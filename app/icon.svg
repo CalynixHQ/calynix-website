@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label="Calynix">
+  <rect width="256" height="256" rx="56" fill="#0A0F1E"/>
+  <path d="M128.00,16.28 L33.44,214.00 L90.56,178.00 L128.00,99.72 Z" fill="#3B7BFF"/>
+  <path d="M128.00,16.28 L222.56,214.00 L165.44,178.00 L128.00,99.72 Z" fill="#EAF0FB"/>
+  <path d="M33.44,214.00 L222.56,214.00 L165.44,178.00 L90.56,178.00 Z" fill="#7FB0FF"/>
+</svg>

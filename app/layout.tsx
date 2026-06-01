@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Footer from "./components/Footer";
 import "./globals.css";
@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Calynix — Creative studio for games, software, and digital experiences",
   description:
-    "Calynix is a creative studio building games, software, and online experiences. Home to Calynix Games and BestMostLast.",
+    "Calynix is a creative studio building games, software, and online experiences. Home to Calynix Games.",
   metadataBase: new URL("https://calynix.com"),
   openGraph: {
     title: "Calynix",
@@ -26,6 +26,10 @@ export const metadata: Metadata = {
     siteName: "Calynix",
     type: "website",
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#0C1220",
 };
 
 export default function RootLayout({
