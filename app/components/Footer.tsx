@@ -14,8 +14,10 @@ export default function Footer() {
         <div>
           <p className="font-semibold text-foreground">Calynix Ltd</p>
           <ul className="mt-3 space-y-2">
-            <li>Registered in England &amp; Wales. Company No. 17245007.</li>
-            <li>71-75 Shelton Street, Covent Garden, London, WC2H 9JQ.</li>
+            <li>Registered in England &amp; Wales.</li>
+            <li>Company No. 17245007.</li>
+            <li>71-75 Shelton Street, Covent Garden,</li>
+            <li>London, WC2H 9JQ.</li>
           </ul>
         </div>
 

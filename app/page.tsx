@@ -11,9 +11,6 @@ export default function Home() {
       <p className="mt-4 text-base text-foreground/60 max-w-2xl">
         Calynix Ltd is the home of Calynix Games and future digital ventures.
       </p>
-      <p className="mt-2 text-base text-foreground/60 max-w-2xl">
-        Founded in 2026, registered in England &amp; Wales.
-      </p>
     </section>
   );
 }
