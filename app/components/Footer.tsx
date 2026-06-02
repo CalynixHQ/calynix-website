@@ -10,18 +10,18 @@ const social = [
 export default function Footer() {
   return (
     <footer className="border-t border-foreground/10 py-12 text-sm text-foreground/60">
-      <div className="container-page flex flex-col gap-8 sm:flex-row sm:justify-between sm:gap-12">
+      <div className="container-page grid grid-cols-1 gap-8 sm:grid-cols-3">
         <div>
           <p className="font-semibold text-foreground">Calynix Ltd</p>
-          <p className="mt-1">
-            Registered in England &amp; Wales. Company No. 17245007.
-          </p>
-          <p>71-75 Shelton Street, Covent Garden, London, WC2H 9JQ.</p>
+          <ul className="mt-3 space-y-2">
+            <li>Registered in England &amp; Wales. Company No. 17245007.</li>
+            <li>71-75 Shelton Street, Covent Garden, London, WC2H 9JQ.</li>
+          </ul>
         </div>
 
         <div>
           <p className="font-semibold text-foreground">Site</p>
-          <ul className="mt-2 space-y-1">
+          <ul className="mt-3 space-y-2">
             <li>
               <Link href="/" className="hover:text-foreground">
                 Home
@@ -52,15 +52,15 @@ export default function Footer() {
 
         <div>
           <p className="font-semibold text-foreground">Contact</p>
-          <p className="mt-2">
-            <a
-              href="mailto:info@calynix.com"
-              className="underline hover:no-underline"
-            >
-              info@calynix.com
-            </a>
-          </p>
-          <ul className="mt-3 space-y-1">
+          <ul className="mt-3 space-y-2">
+            <li>
+              <a
+                href="mailto:info@calynix.com"
+                className="underline hover:no-underline"
+              >
+                info@calynix.com
+              </a>
+            </li>
             {social.map((s) => (
               <li key={s.name}>
                 <a
