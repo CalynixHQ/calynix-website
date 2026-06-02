@@ -60,7 +60,7 @@ export default function Footer() {
               info@calynix.com
             </a>
           </p>
-          <ul className="mt-3 flex flex-wrap gap-x-4 gap-y-1">
+          <ul className="mt-3 space-y-1">
             {social.map((s) => (
               <li key={s.name}>
                 <a
@@ -77,7 +77,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <p className="container-page mt-10 text-xs text-foreground/40">
+      <p className="container-page mt-10 text-center text-xs text-foreground/40">
         © {new Date().getFullYear()} Calynix Ltd. All rights reserved.
       </p>
     </footer>
