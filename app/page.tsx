@@ -25,7 +25,7 @@ export default function Home() {
           >
             <h3 className="text-lg font-semibold">Calynix Games →</h3>
             <p className="mt-2 text-sm text-foreground/70">
-              Our games studio. FIBBY and Reveal, coming soon to mobile.
+              Our games studio. Fibby and Reveal, coming soon to mobile.
             </p>
             <span className="mt-3 inline-block text-xs uppercase tracking-wide text-foreground/50">
               In development

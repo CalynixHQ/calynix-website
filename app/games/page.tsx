@@ -9,12 +9,12 @@ export const metadata: Metadata = {
 
 const games = [
   {
-    name: "FIBBY",
-    tagline: "A fast, tactile puzzle game for iOS.",
+    name: "Fibby",
+    tagline: "A single-player Fibonacci number puzzle.",
     description:
-      "Tap-and-place puzzles across multiple board sizes, with global Game Center leaderboards. Built for quick sessions and long-run high scores.",
-    platform: "iOS",
-    status: "Coming soon to the App Store",
+      "Chase high scores across multiple board sizes, with global Game Center leaderboards. A privacy-friendly, free puzzle for quick sessions — no account needed.",
+    platform: "iPhone & iPad",
+    status: "Submitted to the App Store — coming soon",
   },
   {
     name: "Reveal",
