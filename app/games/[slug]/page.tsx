@@ -38,13 +38,25 @@ export default async function GameDetail({
         >
           ← All games
         </Link>
-        <div className="mt-6 flex items-baseline justify-between gap-3">
-          <h1 className="text-4xl sm:text-6xl font-bold tracking-tight">
-            {game.name}
-          </h1>
-          <span className="text-xs uppercase tracking-wide text-foreground/50">
-            {game.platform}
-          </span>
+        <div className="mt-6 flex items-center gap-4 sm:gap-5">
+          {game.icon && (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              src={game.icon}
+              alt={`${game.name} app icon`}
+              width={80}
+              height={80}
+              className="h-16 w-16 flex-none rounded-2xl border border-foreground/10 sm:h-20 sm:w-20"
+            />
+          )}
+          <div className="flex flex-1 items-baseline justify-between gap-3">
+            <h1 className="text-4xl sm:text-6xl font-bold tracking-tight">
+              {game.name}
+            </h1>
+            <span className="text-xs uppercase tracking-wide text-foreground/50">
+              {game.platform}
+            </span>
+          </div>
         </div>
         <p className="mt-4 text-lg sm:text-xl text-foreground/70 max-w-2xl">
           {game.tagline}

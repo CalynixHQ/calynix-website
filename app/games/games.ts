@@ -13,6 +13,8 @@ export type Game = {
   slug: string;
   name: string;
   tagline: string;
+  /** App icon shown on the grid card. Path under /public; omit if not ready. */
+  icon?: string;
   /** Short blurb for the /games grid card. */
   summary: string;
   /** Full description for the detail page (array of paragraphs). */
@@ -29,6 +31,7 @@ export const games: Game[] = [
     slug: "fibby",
     name: "Fibby",
     tagline: "A single-player Fibonacci number puzzle.",
+    icon: "/games/fibby/icon.webp",
     summary:
       "Chase high scores across multiple board sizes, with global Game Center leaderboards.",
     description: [
