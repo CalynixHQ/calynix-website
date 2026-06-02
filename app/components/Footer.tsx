@@ -10,7 +10,7 @@ const social = [
 export default function Footer() {
   return (
     <footer className="border-t border-foreground/10 py-12 text-sm text-foreground/60">
-      <div className="container-page grid gap-8 sm:grid-cols-3">
+      <div className="container-page flex flex-col gap-8 sm:flex-row sm:justify-between sm:gap-12">
         <div>
           <p className="font-semibold text-foreground">Calynix Ltd</p>
           <p className="mt-1">

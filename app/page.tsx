@@ -2,7 +2,7 @@ import Wordmark from "./components/Wordmark";
 
 export default function Home() {
   return (
-    <section className="container-page flex min-h-[60vh] flex-col justify-center py-16">
+    <section className="container-page flex min-h-[60vh] flex-col items-center justify-center py-16 text-center">
       <h1 className="sr-only">Calynix</h1>
       <Wordmark className="h-16 sm:h-24 w-auto" />
       <p className="mt-6 text-xl sm:text-2xl text-foreground/70 max-w-2xl">
