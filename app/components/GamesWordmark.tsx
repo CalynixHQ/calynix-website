@@ -14,7 +14,7 @@ export default function GamesWordmark({
 }: GamesWordmarkProps) {
   return (
     <svg
-      viewBox="40 30 432 128"
+      viewBox="40 30 460 128"
       className={className}
       role="img"
       aria-label={title}
@@ -32,19 +32,19 @@ export default function GamesWordmark({
       <path d="M136.35,152.50 L234.13,152.50 L208.55,135.50 L161.93,135.50 Z" fill="#7FB0FF" />
       {/* M */}
       <path
-        transform="translate(217.48,144) scale(0.12,-0.12)"
+        transform="translate(237.48,144) scale(0.12,-0.12)"
         d="M78 708H275L459 205H462L644 708H842V0H717V569H715L500 0H412L200 569H198V0H78Z"
         fill="currentColor"
       />
       {/* E */}
       <path
-        transform="translate(327.88,144) scale(0.12,-0.12)"
+        transform="translate(347.88,144) scale(0.12,-0.12)"
         d="M78 708H547V598H204V418H529V312H204V112H565V0H78Z"
         fill="currentColor"
       />
       {/* S */}
       <path
-        transform="translate(401.08,144) scale(0.12,-0.12)"
+        transform="translate(421.08,144) scale(0.12,-0.12)"
         d="M439 560Q419 586 382.5 603.5Q346 621 309 621Q287 621 265.0 615.5Q243 610 225.0 598.5Q207 587 195.5 568.5Q184 550 184 524Q184 500 194.0 483.0Q204 466 221.5 454.0Q239 442 264.0 433.0Q289 424 319 415Q353 404 389.5 390.0Q426 376 456.5 353.0Q487 330 506.5 295.0Q526 260 526 208Q526 151 505.0 108.5Q484 66 449.0 38.0Q414 10 367.0 -4.0Q320 -18 268 -18Q199 -18 133.0 7.5Q67 33 25 83L115 167Q141 131 184.5 110.0Q228 89 270 89Q292 89 315.0 94.5Q338 100 356.5 113.0Q375 126 386.5 145.5Q398 165 398 194Q398 222 385.0 240.5Q372 259 350.0 272.5Q328 286 298.0 296.0Q268 306 235 317Q203 327 171.0 341.0Q139 355 113.5 378.0Q88 401 72.0 434.5Q56 468 56 518Q56 572 78.5 611.0Q101 650 137.5 675.5Q174 701 220.5 713.5Q267 726 315 726Q369 726 424.5 707.0Q480 688 521 650Z"
         fill="currentColor"
       />
