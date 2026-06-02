@@ -5,7 +5,8 @@ export const metadata = {
 
 export default function Privacy() {
   return (
-    <article className="max-w-3xl mx-auto px-6 sm:px-12 py-16 prose prose-neutral dark:prose-invert">
+    <div className="container-page py-16">
+      <article className="max-w-3xl prose prose-neutral dark:prose-invert">
       <h1 className="text-4xl font-bold tracking-tight">Privacy Policy</h1>
       <p className="text-sm text-foreground/60 mt-2">
         Last updated: 22 May 2026
@@ -85,5 +86,6 @@ export default function Privacy() {
         </p>
       </section>
     </article>
+    </div>
   );
 }

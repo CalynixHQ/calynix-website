@@ -9,8 +9,8 @@ const social = [
 
 export default function Footer() {
   return (
-    <footer className="border-t border-foreground/10 px-6 sm:px-12 lg:px-24 py-12 text-sm text-foreground/60">
-      <div className="max-w-4xl mx-auto grid gap-8 sm:grid-cols-3">
+    <footer className="border-t border-foreground/10 py-12 text-sm text-foreground/60">
+      <div className="container-page grid gap-8 sm:grid-cols-3">
         <div>
           <p className="font-semibold text-foreground">Calynix Ltd</p>
           <p className="mt-1">
@@ -53,7 +53,6 @@ export default function Footer() {
         <div>
           <p className="font-semibold text-foreground">Contact</p>
           <p className="mt-2">
-            Business &amp; general enquiries:{" "}
             <a
               href="mailto:info@calynix.com"
               className="underline hover:no-underline"
@@ -78,7 +77,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <p className="max-w-4xl mx-auto mt-10 text-xs text-foreground/40">
+      <p className="container-page mt-10 text-xs text-foreground/40">
         © {new Date().getFullYear()} Calynix Ltd. All rights reserved.
       </p>
     </footer>

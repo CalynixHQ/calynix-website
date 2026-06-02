@@ -5,7 +5,8 @@ export const metadata = {
 
 export default function Support() {
   return (
-    <article className="max-w-3xl mx-auto px-6 sm:px-12 py-16">
+    <div className="container-page py-16">
+      <article className="max-w-3xl">
       <h1 className="text-4xl font-bold tracking-tight">Support</h1>
       <p className="text-sm text-foreground/60 mt-2">
         We&apos;re a small team and read every message.
@@ -64,5 +65,6 @@ export default function Support() {
         </p>
       </section>
     </article>
+    </div>
   );
 }

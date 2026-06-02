@@ -30,8 +30,8 @@ export default async function GameDetail({
   if (!game) notFound();
 
   return (
-    <div className="min-h-screen px-6 py-16 sm:px-12 lg:px-24">
-      <section className="max-w-4xl mx-auto pt-12 pb-8">
+    <div className="py-8">
+      <section className="container-page pt-12 pb-8">
         <Link
           href="/games"
           className="text-sm text-foreground/60 hover:text-foreground"
@@ -78,7 +78,7 @@ export default async function GameDetail({
         )}
       </section>
 
-      <section className="max-w-4xl mx-auto pb-12 space-y-4 text-foreground/80">
+      <section className="container-page pb-12 space-y-4 text-foreground/80">
         {game.description.map((para, i) => (
           <p key={i} className="max-w-2xl">
             {para}
@@ -87,7 +87,7 @@ export default async function GameDetail({
       </section>
 
       {game.screenshots.length > 0 && (
-        <section className="max-w-4xl mx-auto pb-16">
+        <section className="container-page pb-16">
           <h2 className="text-2xl font-semibold mb-6">Screenshots</h2>
           <div className="flex gap-4 overflow-x-auto pb-4 snap-x">
             {game.screenshots.map((shot) => (
@@ -106,7 +106,7 @@ export default async function GameDetail({
         </section>
       )}
 
-      <section className="max-w-4xl mx-auto py-12 border-t border-foreground/10">
+      <section className="container-page py-12 border-t border-foreground/10">
         <p className="text-foreground/70">
           Press and partnership enquiries:{" "}
           <a

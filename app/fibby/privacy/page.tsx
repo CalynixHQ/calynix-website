@@ -6,7 +6,8 @@ export const metadata = {
 
 export default function FibbyPrivacy() {
   return (
-    <article className="max-w-3xl mx-auto px-6 sm:px-12 py-16 prose prose-neutral dark:prose-invert">
+    <div className="container-page py-16">
+      <article className="max-w-3xl prose prose-neutral dark:prose-invert">
       <h1 className="text-4xl font-bold tracking-tight">
         Privacy Policy — Fibby
       </h1>
@@ -88,5 +89,6 @@ export default function FibbyPrivacy() {
         </p>
       </section>
     </article>
+    </div>
   );
 }
