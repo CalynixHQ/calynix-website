@@ -16,8 +16,8 @@ export default function Header() {
           href="/"
           aria-label="Calynix home"
           aria-current={pathname === "/" ? "page" : undefined}
-          className={`flex items-center rounded-md px-3 py-1.5 transition-colors hover:bg-[#1A2740] ${
-            pathname === "/" ? "bg-[#1A2740]" : ""
+          className={`flex items-center rounded-md px-3 py-1.5 transition-colors hover:bg-[#1B2E55] ${
+            pathname === "/" ? "bg-[#1B2E55]" : ""
           }`}
         >
           <Wordmark className="h-5 sm:h-6 w-auto" />
@@ -26,8 +26,8 @@ export default function Header() {
           href="/games"
           aria-label="Games"
           aria-current={gamesActive ? "page" : undefined}
-          className={`flex items-center rounded-md px-3 py-1.5 transition-colors hover:bg-[#1A2740] ${
-            gamesActive ? "bg-[#1A2740]" : ""
+          className={`flex items-center rounded-md px-3 py-1.5 transition-colors hover:bg-[#1B2E55] ${
+            gamesActive ? "bg-[#1B2E55]" : ""
           }`}
         >
           <GamesWordmark className="h-5 sm:h-6 w-auto" />

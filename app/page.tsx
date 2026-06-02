@@ -5,7 +5,7 @@ export default function Home() {
     <section className="container-page flex min-h-[60vh] flex-col items-center justify-center py-16 text-center">
       <h1 className="sr-only">Calynix</h1>
       <Wordmark className="h-[3.2rem] sm:h-[4.8rem] w-auto" />
-      <p className="mt-6 text-xl sm:text-2xl text-foreground/70 max-w-2xl">
+      <p className="mt-6 text-xl sm:text-2xl text-foreground/70 sm:whitespace-nowrap">
         A creative studio building games, software, and online experiences.
       </p>
       <p className="mt-4 text-base text-foreground/60 max-w-2xl">

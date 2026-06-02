@@ -9,8 +9,8 @@ const social = [
 
 export default function Footer() {
   return (
-    <footer className="border-t border-foreground/10 py-12 text-sm text-foreground/60">
-      <div className="container-page grid grid-cols-1 gap-8 sm:grid-cols-3">
+    <footer className="border-t border-foreground/10 py-10 text-[0.74rem] text-foreground/60">
+      <div className="container-page grid grid-cols-1 gap-7 sm:grid-cols-3">
         <div>
           <p className="font-semibold text-foreground">Calynix Ltd</p>
           <ul className="mt-3 space-y-2">
@@ -79,7 +79,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <p className="container-page mt-10 text-center text-xs text-foreground/40">
+      <p className="container-page mt-9 text-center text-[0.64rem] text-foreground/40">
         © {new Date().getFullYear()} Calynix Ltd. All rights reserved.
       </p>
     </footer>
