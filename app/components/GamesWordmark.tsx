@@ -14,7 +14,7 @@ export default function GamesWordmark({
 }: GamesWordmarkProps) {
   return (
     <svg
-      viewBox="0 0 480 200"
+      viewBox="40 30 432 128"
       className={className}
       role="img"
       aria-label={title}
