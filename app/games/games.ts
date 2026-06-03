@@ -17,6 +17,9 @@ export type Game = {
   slug: string;
   name: string;
   tagline: string;
+  /** Where the /games card links. Defaults to /games/<slug>; set this to point
+   * at a standalone landing page (e.g. "/reveal") instead. */
+  href?: string;
   /** App icon shown on the grid card. Path under /public; omit if not ready. */
   icon?: string;
   /** Short blurb for the /games grid card. */
@@ -60,6 +63,7 @@ export const games: Game[] = [
     slug: "reveal",
     name: "Reveal",
     tagline: "A detective game of cases and daily challenges.",
+    href: "/reveal",
     icon: "/games/reveal/icon.webp",
     summary:
       "Work through case files, solve daily challenges, and uncover the story.",

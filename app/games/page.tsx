@@ -17,7 +17,7 @@ export default function Games() {
           {games.map((game) => (
             <Link
               key={game.slug}
-              href={`/games/${game.slug}`}
+              href={game.href ?? `/games/${game.slug}`}
               className="group p-6 rounded-lg border border-foreground/10 hover:border-foreground/30 transition-colors"
             >
               <div className="flex items-start gap-4">
