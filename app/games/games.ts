@@ -51,15 +51,23 @@ export const games: Game[] = [
     slug: "reveal",
     name: "Reveal",
     tagline: "A detective game of cases and daily challenges.",
+    icon: "/games/reveal/icon.webp",
     summary:
       "Work through case files, solve daily challenges, and uncover the story.",
     description: [
       "Reveal is a detective game built around case files and daily challenges. Read the evidence, follow the leads, and crack each case.",
+      "Pick up a new mystery each day, build your detective profile as you go, and play at your own pace — it's privacy-friendly and needs no account, with your progress kept on your device.",
       "Available in English, German, French, Italian, Spanish, and Turkish.",
     ],
     platform: "iPhone & iPad",
     status: "In store-submission prep",
-    screenshots: [],
+    screenshots: [
+      { src: "/games/reveal/01-home.webp", alt: "Reveal home screen" },
+      { src: "/games/reveal/02-gameplay.webp", alt: "Reveal gameplay in progress" },
+      { src: "/games/reveal/03-cards.webp", alt: "Reveal evidence cards" },
+      { src: "/games/reveal/04-story.webp", alt: "A Reveal case story" },
+      { src: "/games/reveal/05-daily.webp", alt: "Reveal daily challenge" },
+    ],
   },
 ];
 
