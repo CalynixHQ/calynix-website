@@ -106,6 +106,34 @@ export default async function GameDetail({
         </section>
       )}
 
+      {(game.privacyUrl || game.termsUrl) && (
+        <section className="container-page pb-4">
+          <h2 className="text-2xl font-semibold mb-4">Legal</h2>
+          <ul className="space-y-2 text-foreground/70">
+            {game.privacyUrl && (
+              <li>
+                <Link
+                  href={game.privacyUrl}
+                  className="underline hover:no-underline"
+                >
+                  Privacy Policy
+                </Link>
+              </li>
+            )}
+            {game.termsUrl && (
+              <li>
+                <Link
+                  href={game.termsUrl}
+                  className="underline hover:no-underline"
+                >
+                  Terms of Service
+                </Link>
+              </li>
+            )}
+          </ul>
+        </section>
+      )}
+
       <section className="container-page py-12 border-t border-foreground/10">
         <p className="text-foreground/70">
           Press and partnership enquiries:{" "}

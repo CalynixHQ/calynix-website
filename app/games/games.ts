@@ -3,6 +3,10 @@
 // To add a future game: append an entry with a unique `slug`, a `description`
 // (full prose for the detail page), and a `screenshots` array of files placed
 // under public/games/<slug>/. Keep `tagline` short (one line for the card).
+// For parity with existing games, also provide `icon`, and once the legal
+// pages exist set `privacyUrl`/`termsUrl` so the detail page's Legal section
+// links them. The /games/[slug] template renders every game identically from
+// these fields — no per-game page code.
 
 export type Screenshot = {
   src: string; // path under /public, e.g. "/games/fibby/01-intro.webp"
@@ -24,6 +28,10 @@ export type Game = {
   /** Live App Store / store URL once published; omit while unreleased. */
   storeUrl?: string;
   screenshots: Screenshot[];
+  /** Per-game legal pages, rendered in the detail page's Legal section.
+   * Omit a field if that page doesn't exist yet. */
+  privacyUrl?: string;
+  termsUrl?: string;
 };
 
 export const games: Game[] = [
@@ -46,6 +54,7 @@ export const games: Game[] = [
       { src: "/games/fibby/03-board.webp", alt: "A Fibby game board" },
       { src: "/games/fibby/04-gameplay.webp", alt: "Fibby gameplay in progress" },
     ],
+    privacyUrl: "/fibby/privacy",
   },
   {
     slug: "reveal",
@@ -68,6 +77,8 @@ export const games: Game[] = [
       { src: "/games/reveal/04-story.webp", alt: "A Reveal case story" },
       { src: "/games/reveal/05-daily.webp", alt: "Reveal daily challenge" },
     ],
+    privacyUrl: "/reveal/privacy",
+    termsUrl: "/reveal/terms",
   },
 ];
 
