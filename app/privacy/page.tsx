@@ -15,7 +15,7 @@ export default function Privacy() {
       <section className="mt-8 space-y-4 text-foreground/80">
         <p>
           Calynix Ltd (&quot;Calynix&quot;, &quot;we&quot;, &quot;us&quot;) operates this website and the brands
-          listed on it, including Calynix Games and BestMostLast. We respect
+          listed on it, including Calynix Games. We respect
           your privacy and only collect data necessary to provide our services.
         </p>
 
