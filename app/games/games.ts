@@ -42,6 +42,7 @@ export const games: Game[] = [
     slug: "fibby",
     name: "Fibby",
     tagline: "A single-player Fibonacci number puzzle.",
+    href: "/fibby",
     icon: "/games/fibby/icon.webp",
     summary:
       "Chase high scores across multiple board sizes, with global Game Center leaderboards.",
