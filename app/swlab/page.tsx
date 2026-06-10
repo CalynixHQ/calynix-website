@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 import { swlabProjects } from "./swlab";
 
@@ -50,11 +51,9 @@ export default function SwLab() {
             );
 
             return project.href ? (
-              <a
+              <Link
                 key={project.slug}
                 href={project.href}
-                target={project.href.startsWith("http") ? "_blank" : undefined}
-                rel={project.href.startsWith("http") ? "noopener noreferrer" : undefined}
                 className="group p-6 rounded-lg border border-foreground/10 hover:border-foreground/30 transition-colors"
               >
                 {card}
@@ -62,7 +61,7 @@ export default function SwLab() {
                 <span className="mt-4 inline-block text-xs uppercase tracking-wide text-foreground/50">
                   {project.status}
                 </span>
-              </a>
+              </Link>
             ) : (
               <div
                 key={project.slug}
