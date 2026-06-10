@@ -11,7 +11,7 @@ export default function Wordmark({ className, title = "Calynix", accent }: Wordm
   const ix = accent ?? "currentColor";
   return (
     <svg
-      viewBox="40 30 620 140"
+      viewBox="40 30 620 128"
       className={className}
       role="img"
       aria-label={title}
