@@ -24,7 +24,7 @@ export default function Header() {
             pathname === "/" ? "bg-[#1B2E55]" : ""
           }`}
         >
-          <Image src="/calynix-wordmark-brand.svg" alt="Calynix" height={40} width={420} className="h-[40px] w-auto" unoptimized />
+          <Image src="/calynix-wordmark-brand.svg" alt="Calynix" height={50} width={525} className="h-[50px] w-auto" unoptimized />
         </Link>
         <Link
           href="/apps"
