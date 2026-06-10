@@ -6,7 +6,7 @@ type SwlabWordmarkProps = {
 export default function SwlabWordmark({ className, title = "Calynix SW Lab" }: SwlabWordmarkProps) {
   return (
     <svg
-      viewBox="40 33 584 120"
+      viewBox="40 33 571 120"
       className={className}
       role="img"
       aria-label={title}
@@ -19,12 +19,14 @@ export default function SwlabWordmark({ className, title = "Calynix SW Lab" }: S
       <path transform="translate(125.34,144.00) scale(0.144,-0.144)" d="M6 708H144L281 188H283L439 708H569L722 188H724L864 708H998L791 0H669L503 531H501L335 0H213Z" fill="currentColor" />
       {/* L */}
       <path transform="translate(293.06,144.00) scale(0.144,-0.144)" d="M78 708H204V112H505V0H78Z" fill="currentColor" />
-      {/* A — from calynix.svg / calynix-icon.svg, green theme */}
-      <path d="M434.04,33.37 L375.00,152.88 L406.52,134.63 L434.04,78.91 Z" fill="#22C55E" />
-      <path d="M434.04,33.37 L493.09,152.88 L461.57,134.63 L434.04,78.91 Z" fill="#BBF7D0" />
-      <path d="M375.00,152.88 L493.09,152.88 L461.57,134.63 L406.52,134.63 Z" fill="#86EFAC" />
+      {/* A — transparent, from calynix-icon-transparent.svg, green theme */}
+      <g transform="translate(334.0107,22.0652) scale(0.687049,0.608441)">
+        <path d="M128.00,18.58 L42.06,215.00 L87.94,185.00 L128.00,93.42 Z" fill="#22C55E"/>
+        <path d="M128.00,18.58 L213.94,215.00 L168.06,185.00 L128.00,93.42 Z" fill="#BBF7D0"/>
+        <path d="M42.06,215.00 L213.94,215.00 L168.06,185.00 L87.94,185.00 Z" fill="#86EFAC"/>
+      </g>
       {/* B */}
-      <path transform="translate(502.31,144.00) scale(0.144,-0.144)" d="M78 708H354Q394 708 433.0 698.5Q472 689 502.5 667.5Q533 646 552.0 612.0Q571 578 571 530Q571 470 537.0 431.0Q503 392 448 375V373Q515 364 558.0 321.0Q601 278 601 206Q601 148 578.0 108.5Q555 69 517.5 45.0Q480 21 431.5 10.5Q383 0 333 0H78ZM204 420H316Q379 420 412.0 445.0Q445 470 445 516Q445 564 411.0 584.0Q377 604 305 604H204ZM204 106H317Q341 106 369.0 109.5Q397 113 420.5 124.0Q444 135 459.5 156.0Q475 177 475 212Q475 268 437.0 290.0Q399 312 322 312H204Z" fill="currentColor" />
+      <path transform="translate(489.36,144.00) scale(0.144,-0.144)" d="M78 708H354Q394 708 433.0 698.5Q472 689 502.5 667.5Q533 646 552.0 612.0Q571 578 571 530Q571 470 537.0 431.0Q503 392 448 375V373Q515 364 558.0 321.0Q601 278 601 206Q601 148 578.0 108.5Q555 69 517.5 45.0Q480 21 431.5 10.5Q383 0 333 0H78ZM204 420H316Q379 420 412.0 445.0Q445 470 445 516Q445 564 411.0 584.0Q377 604 305 604H204ZM204 106H317Q341 106 369.0 109.5Q397 113 420.5 124.0Q444 135 459.5 156.0Q475 177 475 212Q475 268 437.0 290.0Q399 312 322 312H204Z" fill="currentColor" />
     </svg>
   );
 }
