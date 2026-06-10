@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import Wordmark from "./Wordmark";
+import Image from "next/image";
 import AppsWordmark from "./AppsWordmark";
 import GamesWordmark from "./GamesWordmark";
 import SwlabWordmark from "./SwlabWordmark";
@@ -24,7 +24,7 @@ export default function Header() {
             pathname === "/" ? "bg-[#1B2E55]" : ""
           }`}
         >
-          <Wordmark className="h-[1.375rem] sm:h-[1.65rem] w-auto" />
+          <Image src="/calynix-wordmark-brand.svg" alt="Calynix" height={26} width={280} className="h-[1.375rem] sm:h-[1.65rem] w-auto" unoptimized />
         </Link>
         <Link
           href="/apps"
