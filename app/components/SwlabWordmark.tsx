@@ -19,10 +19,10 @@ export default function SwlabWordmark({ className, title = "Calynix SW Lab" }: S
       <path transform="translate(111.12,144.00) scale(0.12,-0.12)" d="M6 708H144L281 188H283L439 708H569L722 188H724L864 708H998L791 0H669L503 531H501L335 0H213Z" fill="currentColor" />
       {/* L */}
       <path transform="translate(250.88,144.00) scale(0.12,-0.12)" d="M78 708H204V112H505V0H78Z" fill="currentColor" />
-      {/* A — pixel-traced from brand/logo/A.png, green recolor */}
-      <path d="M375.49,40.73 L356.70,44.67 L331.85,119.64 L351.22,115.09 Z" fill="#22C55E" />
-      <path d="M379.57,47.85 L394.04,145.23 L413.29,148.87 Z" fill="currentColor" />
-      <path d="M356.59,42.55 L375.60,42.55 L388.32,147.05 L322.16,147.05 Z" fill="#14532D" />
+      {/* A — from calynix-wordmark-light.svg geometry, green recolor */}
+      <path d="M368.37,36.04 L319.48,152.50 L345.06,135.50 L368.37,79.96 Z" fill="#22C55E" />
+      <path d="M368.37,36.04 L417.26,152.50 L391.68,135.50 L368.37,79.96 Z" fill="currentColor" />
+      <path d="M319.48,152.50 L417.26,152.50 L391.68,135.50 L345.06,135.50 Z" fill="#86EFAC" />
       {/* B */}
       <path transform="translate(425.26,144.00) scale(0.12,-0.12)" d="M78 708H354Q394 708 433.0 698.5Q472 689 502.5 667.5Q533 646 552.0 612.0Q571 578 571 530Q571 470 537.0 431.0Q503 392 448 375V373Q515 364 558.0 321.0Q601 278 601 206Q601 148 578.0 108.5Q555 69 517.5 45.0Q480 21 431.5 10.5Q383 0 333 0H78ZM204 420H316Q379 420 412.0 445.0Q445 470 445 516Q445 564 411.0 584.0Q377 604 305 604H204ZM204 106H317Q341 106 369.0 109.5Q397 113 420.5 124.0Q444 135 459.5 156.0Q475 177 475 212Q475 268 437.0 290.0Q399 312 322 312H204Z" fill="currentColor" />
     </svg>
