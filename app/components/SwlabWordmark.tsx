@@ -32,8 +32,10 @@ export default function SwlabWordmark({ className, title = "Calynix SW Lab" }: S
         d="M78 708H204V112H505V0H78Z"
         fill="currentColor"
       />
-      {/* A — cyan badge */}
-      <image x="364.08" y="37.07" width="121.37" height="121.37" href="/brand-badge-cyan.png" preserveAspectRatio="xMidYMid meet" />
+      {/* A — cyan triangle */}
+      <path d="M424.76,45.88 L384.02,139.00 L405.77,124.78 Z" fill="#06B6D4" />
+      <path d="M424.76,45.88 L465.51,139.00 L443.76,124.78 Z" fill="#06B6D4" />
+      <path d="M384.02,139.00 L465.51,139.00 L443.76,124.78 L405.77,124.78 Z" fill="#67E8F9" />
       {/* B */}
       <path
         transform="translate(478.19,144.00) scale(0.144,-0.144)"

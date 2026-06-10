@@ -15,8 +15,10 @@ export default function AppsWordmark({ className, title = "Calynix Apps" }: Apps
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      {/* A — teal icon badge, sized to cap height */}
-      <image x="46.34" y="37.07" width="121.37" height="121.37" href="/brand-badge-teal.png" preserveAspectRatio="xMidYMid meet" />
+      {/* A — teal triangle */}
+      <path d="M107.03,45.88 L66.28,139.00 L88.03,124.78 Z" fill="#14B8A6" />
+      <path d="M107.03,45.88 L147.77,139.00 L126.02,124.78 Z" fill="#14B8A6" />
+      <path d="M66.28,139.00 L147.77,139.00 L126.02,124.78 L88.03,124.78 Z" fill="#5DD8CC" />
       {/* P */}
       <path
         transform="translate(160.45,144.00) scale(0.144,-0.144)"
