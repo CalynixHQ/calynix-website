@@ -22,7 +22,7 @@ export default function Header() {
             pathname === "/" ? "bg-[#1B2E55]" : ""
           }`}
         >
-          <Wordmark className="h-5 sm:h-6 w-auto" />
+          <Wordmark className="h-[1.375rem] sm:h-[1.65rem] w-auto" />
         </Link>
         <Link
           href="/apps"
