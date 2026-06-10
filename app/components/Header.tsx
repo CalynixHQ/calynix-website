@@ -5,10 +5,12 @@ import { usePathname } from "next/navigation";
 import Wordmark from "./Wordmark";
 import AppsWordmark from "./AppsWordmark";
 import GamesWordmark from "./GamesWordmark";
+import SwlabWordmark from "./SwlabWordmark";
 
 export default function Header() {
   const pathname = usePathname();
   const appsActive = pathname === "/apps" || pathname.startsWith("/apps/");
+  const swlabActive = pathname === "/swlab" || pathname.startsWith("/swlab/");
   const gamesActive = pathname === "/games" || pathname.startsWith("/games/");
 
   return (
@@ -33,6 +35,16 @@ export default function Header() {
           }`}
         >
           <AppsWordmark className="h-5 sm:h-6 w-auto" />
+        </Link>
+        <Link
+          href="/swlab"
+          aria-label="SW Lab"
+          aria-current={swlabActive ? "page" : undefined}
+          className={`flex items-center rounded-md px-3 py-1.5 transition-colors hover:bg-[#0C3A42] ${
+            swlabActive ? "bg-[#0C3A42]" : ""
+          }`}
+        >
+          <SwlabWordmark className="h-5 sm:h-6 w-auto" />
         </Link>
         <Link
           href="/games"
