@@ -15,10 +15,8 @@ export default function Wordmark({ className, title = "Calynix" }: WordmarkProps
     >
       {/* C */}
       <path transform="translate(40.00,144.00) scale(0.144,-0.144)" d="M589 542Q561 580 516.0 597.5Q471 615 428 615Q373 615 328.0 595.0Q283 575 250.5 540.0Q218 505 200.5 458.0Q183 411 183 356Q183 298 200.0 250.0Q217 202 248.5 167.5Q280 133 324.0 114.0Q368 95 423 95Q480 95 524.0 117.5Q568 140 595 177L696 106Q649 47 581.0 14.5Q513 -18 422 -18Q339 -18 269.5 9.5Q200 37 150.0 86.5Q100 136 72.0 204.5Q44 273 44 356Q44 441 73.5 509.5Q103 578 154.5 626.0Q206 674 276.0 700.0Q346 726 428 726Q462 726 499.0 719.5Q536 713 570.0 699.5Q604 686 634.0 666.0Q664 646 685 618Z" fill="#3B7BFF" />
-      {/* A — exact geometry from calynix.svg / calynix-icon.svg */}
-      <path d="M188.52,33.37 L129.48,152.88 L161.00,134.63 L188.52,78.91 Z" fill="#3B7BFF" />
-      <path d="M188.52,33.37 L247.57,152.88 L216.05,134.63 L188.52,78.91 Z" fill="#EAF0FB" />
-      <path d="M129.48,152.88 L247.57,152.88 L216.05,134.63 L161.00,134.63 Z" fill="#1A3A7A" />
+      {/* A — exact PNG from calynix.svg */}
+      <image href="/brand-A.png" x="129.48" y="33.37" width="118.09" height="119.51" preserveAspectRatio="xMidYMid meet" />
       {/* L */}
       <path transform="translate(244.70,144.00) scale(0.144,-0.144)" d="M78 708H204V112H505V0H78Z" fill="#EAF0FB" />
       {/* Y */}
