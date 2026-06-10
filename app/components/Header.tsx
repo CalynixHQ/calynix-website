@@ -3,10 +3,12 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Wordmark from "./Wordmark";
+import AppsWordmark from "./AppsWordmark";
 import GamesWordmark from "./GamesWordmark";
 
 export default function Header() {
   const pathname = usePathname();
+  const appsActive = pathname === "/apps" || pathname.startsWith("/apps/");
   const gamesActive = pathname === "/games" || pathname.startsWith("/games/");
 
   return (
@@ -21,6 +23,16 @@ export default function Header() {
           }`}
         >
           <Wordmark className="h-5 sm:h-6 w-auto" />
+        </Link>
+        <Link
+          href="/apps"
+          aria-label="Apps"
+          aria-current={appsActive ? "page" : undefined}
+          className={`flex items-center rounded-md px-3 py-1.5 transition-colors hover:bg-[#0D3D38] ${
+            appsActive ? "bg-[#0D3D38]" : ""
+          }`}
+        >
+          <AppsWordmark className="h-5 sm:h-6 w-auto" />
         </Link>
         <Link
           href="/games"

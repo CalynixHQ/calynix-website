@@ -25,7 +25,7 @@ export default function Wordmark({ className, title = "Calynix", accent }: Wordm
         fill="currentColor"
       />
       {/* A badge — transparent-bg PNG sits inside the C opening */}
-      <image x="129.48" y="33.37" width="118.09" height="119.51" href="/brand-badge.png" preserveAspectRatio="xMidYMid meet" />
+      <image x="141" y="33.37" width="118.09" height="119.51" href="/brand-badge.png" preserveAspectRatio="xMidYMid meet" />
       {/* L */}
       <path transform="translate(244.70,144.00) scale(0.144,-0.144)" d="M78 708H204V112H505V0H78Z" fill="currentColor" />
       {/* Y */}
