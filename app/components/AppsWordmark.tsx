@@ -3,8 +3,8 @@ type AppsWordmarkProps = {
   title?: string;
 };
 
-// triangle-A (teal) · P · P · S
-// Triangle uses brand teal; all other letters use currentColor.
+// teal-A icon (transparent PNG) · P · P · S
+// Badge sized to match cap height of the other letters.
 export default function AppsWordmark({ className, title = "Calynix Apps" }: AppsWordmarkProps) {
   return (
     <svg
@@ -15,10 +15,8 @@ export default function AppsWordmark({ className, title = "Calynix Apps" }: Apps
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      {/* A — triangle, teal accent */}
-      <path d="M105.01,36.04 L46.34,152.50 L77.04,135.50 L105.01,79.96 Z" fill="#14B8A6" />
-      <path d="M105.01,36.04 L163.68,152.50 L132.98,135.50 L105.01,79.96 Z" fill="#14B8A6" />
-      <path d="M46.34,152.50 L163.68,152.50 L132.98,135.50 L77.04,135.50 Z" fill="#5DD8CC" />
+      {/* A — teal icon badge, sized to cap height */}
+      <image x="46.34" y="37.07" width="121.37" height="121.37" href="/brand-badge-teal.png" preserveAspectRatio="xMidYMid meet" />
       {/* P */}
       <path
         transform="translate(160.45,144.00) scale(0.144,-0.144)"
