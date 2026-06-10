@@ -1,10 +1,18 @@
-import Wordmark from "./components/Wordmark";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <section className="container-page flex min-h-[60vh] flex-col items-center justify-center py-16 text-center">
       <h1 className="sr-only">Calynix</h1>
-      <Wordmark className="h-[3.2rem] sm:h-[4.8rem] w-auto" />
+      <Image
+        src="/calynix-wordmark-brand.svg"
+        alt="Calynix"
+        height={80}
+        width={840}
+        className="h-[3.2rem] sm:h-[4.8rem] w-auto"
+        unoptimized
+        priority
+      />
       <p className="mt-6 text-[1rem] sm:text-[1.2rem] text-foreground/70 sm:whitespace-nowrap">
         A creative studio building games, software, and online experiences.
       </p>

@@ -33,7 +33,9 @@ export const swlabProjects: SwLabProject[] = [
     platform: "Web",
     status: "Live",
     url: "https://signlyn.vercel.app/?ref=producthunt",
-    screenshots: [],
+    screenshots: [
+      { src: "/swlab/signlyn/01-editor.webp", alt: "Signlyn signature editor" },
+    ],
   },
 ];
 
