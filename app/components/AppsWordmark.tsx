@@ -6,7 +6,7 @@ type AppsWordmarkProps = {
 export default function AppsWordmark({ className, title = "Calynix Apps" }: AppsWordmarkProps) {
   return (
     <svg
-      viewBox="40 36 323 108"
+      viewBox="40 36 323 120"
       className={className}
       role="img"
       aria-label={title}

@@ -6,7 +6,7 @@ type SwlabWordmarkProps = {
 export default function SwlabWordmark({ className, title = "Calynix SW Lab" }: SwlabWordmarkProps) {
   return (
     <svg
-      viewBox="40 36 457 108"
+      viewBox="40 36 457 120"
       className={className}
       role="img"
       aria-label={title}

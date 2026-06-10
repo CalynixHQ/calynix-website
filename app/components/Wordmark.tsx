@@ -6,7 +6,7 @@ type WordmarkProps = {
 export default function Wordmark({ className, title = "Calynix" }: WordmarkProps) {
   return (
     <svg
-      viewBox="40 36 538 108"
+      viewBox="40 36 538 120"
       className={className}
       role="img"
       aria-label={title}

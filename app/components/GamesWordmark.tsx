@@ -6,7 +6,7 @@ type GamesWordmarkProps = {
 export default function GamesWordmark({ className, title = "Calynix Games" }: GamesWordmarkProps) {
   return (
     <svg
-      viewBox="40 36 445 108"
+      viewBox="40 36 445 120"
       className={className}
       role="img"
       aria-label={title}
