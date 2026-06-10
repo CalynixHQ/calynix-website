@@ -37,16 +37,6 @@ export default function Header() {
           <AppsWordmark className="h-5 sm:h-6 w-auto" />
         </Link>
         <Link
-          href="/swlab"
-          aria-label="SW Lab"
-          aria-current={swlabActive ? "page" : undefined}
-          className={`flex items-center rounded-md px-3 py-1.5 transition-colors hover:bg-[#0C3A42] ${
-            swlabActive ? "bg-[#0C3A42]" : ""
-          }`}
-        >
-          <SwlabWordmark className="h-5 sm:h-6 w-auto" />
-        </Link>
-        <Link
           href="/games"
           aria-label="Games"
           aria-current={gamesActive ? "page" : undefined}
@@ -55,6 +45,16 @@ export default function Header() {
           }`}
         >
           <GamesWordmark className="h-5 sm:h-6 w-auto" />
+        </Link>
+        <Link
+          href="/swlab"
+          aria-label="SW Lab"
+          aria-current={swlabActive ? "page" : undefined}
+          className={`flex items-center rounded-md px-3 py-1.5 transition-colors hover:bg-[#14532D] ${
+            swlabActive ? "bg-[#14532D]" : ""
+          }`}
+        >
+          <SwlabWordmark className="h-5 sm:h-6 w-auto" />
         </Link>
       </nav>
     </header>
