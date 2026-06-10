@@ -15,10 +15,10 @@ export default function GamesWordmark({ className, title = "Calynix Games" }: Ga
     >
       {/* G */}
       <path transform="translate(40.00,144.00) scale(0.12,-0.12)" d="M698 37Q644 11 579.5 -3.5Q515 -18 431 -18Q345 -18 274.0 9.5Q203 37 152.0 86.5Q101 136 72.5 204.5Q44 273 44 356Q44 441 73.5 509.5Q103 578 154.5 626.0Q206 674 276.0 700.0Q346 726 428 726Q513 726 583.5 701.5Q654 677 697 637L610 543Q583 573 534.5 594.0Q486 615 429 615Q373 615 327.5 595.0Q282 575 250.0 540.0Q218 505 200.5 458.0Q183 411 183 356Q183 299 200.5 251.5Q218 204 250.5 169.0Q283 134 329.5 114.5Q376 95 435 95Q516 95 576 120V300H427V404H698Z" fill="currentColor" />
-      {/* A — blue, same geometry as CALYNIX A shifted to sit after G */}
-      <path d="M180.65,36.04 L131.76,152.50 L157.34,135.50 L180.65,79.96 Z" fill="#3B7BFF" />
-      <path d="M180.65,36.04 L229.54,152.50 L203.96,135.50 L180.65,79.96 Z" fill="currentColor" />
-      <path d="M131.76,152.50 L229.54,152.50 L203.96,135.50 L157.34,135.50 Z" fill="#7FB0FF" />
+      {/* A — pixel-traced from brand/logo/A.png */}
+      <path d="M187.77,40.73 L168.98,44.67 L144.13,119.64 L163.50,115.09 Z" fill="#3B7BFF" />
+      <path d="M191.85,47.85 L206.32,145.23 L225.57,148.87 Z" fill="currentColor" />
+      <path d="M168.87,42.55 L187.88,42.55 L200.60,147.05 L134.44,147.05 Z" fill="#1A3578" />
       {/* M */}
       <path transform="translate(237.54,144.00) scale(0.12,-0.12)" d="M78 708H275L459 205H462L644 708H842V0H717V569H715L500 0H412L200 569H198V0H78Z" fill="currentColor" />
       {/* E */}

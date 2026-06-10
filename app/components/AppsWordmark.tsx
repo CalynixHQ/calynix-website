@@ -13,10 +13,10 @@ export default function AppsWordmark({ className, title = "Calynix Apps" }: Apps
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      {/* A — teal, same geometry as CALYNIX A shifted to x=40 left edge */}
-      <path d="M88.89,36.04 L40.00,152.50 L65.58,135.50 L88.89,79.96 Z" fill="#14B8A6" />
-      <path d="M88.89,36.04 L137.78,152.50 L112.20,135.50 L88.89,79.96 Z" fill="currentColor" />
-      <path d="M40.00,152.50 L137.78,152.50 L112.20,135.50 L65.58,135.50 Z" fill="#5DD8CC" />
+      {/* A — pixel-traced from brand/logo/A.png, teal recolor */}
+      <path d="M96.01,40.73 L77.22,44.67 L52.37,119.64 L71.74,115.09 Z" fill="#14B8A6" />
+      <path d="M100.09,47.85 L114.56,145.23 L133.81,148.87 Z" fill="currentColor" />
+      <path d="M77.11,42.55 L96.12,42.55 L108.84,147.05 L42.68,147.05 Z" fill="#0D6B61" />
       {/* P */}
       <path transform="translate(145.78,144.00) scale(0.12,-0.12)" d="M78 708H309Q370 708 419.0 697.0Q468 686 503.0 661.0Q538 636 557.0 597.0Q576 558 576 503Q576 444 554.0 404.0Q532 364 494.5 339.5Q457 315 407.0 304.0Q357 293 301 293H204V0H78ZM292 399Q323 399 351.0 403.5Q379 408 401.0 419.5Q423 431 436.0 451.0Q449 471 449 503Q449 534 436.0 553.5Q423 573 401.5 584.0Q380 595 352.5 598.5Q325 602 296 602H204V399Z" fill="currentColor" />
       {/* P */}
