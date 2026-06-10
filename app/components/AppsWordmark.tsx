@@ -1,10 +1,42 @@
-import Wordmark from "./Wordmark";
-
 type AppsWordmarkProps = {
   className?: string;
+  title?: string;
 };
 
-// Calynix Apps wordmark — same mark as the main wordmark, I+X in brand teal.
-export default function AppsWordmark({ className }: AppsWordmarkProps) {
-  return <Wordmark className={className} title="Calynix Apps" accent="#14B8A6" />;
+// triangle-A (teal) · P · P · S
+// Triangle uses brand teal; all other letters use currentColor.
+export default function AppsWordmark({ className, title = "Calynix Apps" }: AppsWordmarkProps) {
+  return (
+    <svg
+      viewBox="40 30 375 128"
+      className={className}
+      role="img"
+      aria-label={title}
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      {/* A — triangle, teal accent */}
+      <path d="M105.01,36.04 L46.34,152.50 L77.04,135.50 L105.01,79.96 Z" fill="#14B8A6" />
+      <path d="M105.01,36.04 L163.68,152.50 L132.98,135.50 L105.01,79.96 Z" fill="#14B8A6" />
+      <path d="M46.34,152.50 L163.68,152.50 L132.98,135.50 L77.04,135.50 Z" fill="#5DD8CC" />
+      {/* P */}
+      <path
+        transform="translate(160.45,144.00) scale(0.144,-0.144)"
+        d="M78 708H309Q370 708 419.0 697.0Q468 686 503.0 661.0Q538 636 557.0 597.0Q576 558 576 503Q576 444 554.0 404.0Q532 364 494.5 339.5Q457 315 407.0 304.0Q357 293 301 293H204V0H78ZM292 399Q323 399 351.0 403.5Q379 408 401.0 419.5Q423 431 436.0 451.0Q449 471 449 503Q449 534 436.0 553.5Q423 573 401.5 584.0Q380 595 352.5 598.5Q325 602 296 602H204V399Z"
+        fill="currentColor"
+      />
+      {/* P */}
+      <path
+        transform="translate(240.16,144.00) scale(0.144,-0.144)"
+        d="M78 708H309Q370 708 419.0 697.0Q468 686 503.0 661.0Q538 636 557.0 597.0Q576 558 576 503Q576 444 554.0 404.0Q532 364 494.5 339.5Q457 315 407.0 304.0Q357 293 301 293H204V0H78ZM292 399Q323 399 351.0 403.5Q379 408 401.0 419.5Q423 431 436.0 451.0Q449 471 449 503Q449 534 436.0 553.5Q423 573 401.5 584.0Q380 595 352.5 598.5Q325 602 296 602H204V399Z"
+        fill="currentColor"
+      />
+      {/* S */}
+      <path
+        transform="translate(327.50,144.00) scale(0.144,-0.144)"
+        d="M439 560Q419 586 382.5 603.5Q346 621 309 621Q287 621 265.0 615.5Q243 610 225.0 598.5Q207 587 195.5 568.5Q184 550 184 524Q184 500 194.0 483.0Q204 466 221.5 454.0Q239 442 264.0 433.0Q289 424 319 415Q353 404 389.5 390.0Q426 376 456.5 353.0Q487 330 506.5 295.0Q526 260 526 208Q526 151 505.0 108.5Q484 66 449.0 38.0Q414 10 367.0 -4.0Q320 -18 268 -18Q199 -18 133.0 7.5Q67 33 25 83L115 167Q141 131 184.5 110.0Q228 89 270 89Q292 89 315.0 94.5Q338 100 356.5 113.0Q375 126 386.5 145.5Q398 165 398 194Q398 222 385.0 240.5Q372 259 350.0 272.5Q328 286 298.0 296.0Q268 306 235 317Q203 327 171.0 341.0Q139 355 113.5 378.0Q88 401 72.0 434.5Q56 468 56 518Q56 572 78.5 611.0Q101 650 137.5 675.5Q174 701 220.5 713.5Q267 726 315 726Q369 726 424.5 707.0Q480 688 521 650Z"
+        fill="currentColor"
+      />
+    </svg>
+  );
 }
