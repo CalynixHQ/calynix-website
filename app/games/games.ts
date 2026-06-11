@@ -1,41 +1,25 @@
-// Single source of truth for the games shown on calynix.com.
-// Both the /games grid and the /games/[slug] detail pages read from here.
-// To add a future game: append an entry with a unique `slug`, a `description`
-// (full prose for the detail page), and a `screenshots` array of files placed
-// under public/games/<slug>/. Keep `tagline` short (one line for the card).
-// For parity with existing games, also provide `icon`, and once the legal
-// pages exist set `privacyUrl`/`termsUrl` so the detail page's Legal section
-// links them. The /games/[slug] template renders every game identically from
-// these fields — no per-game page code.
-
-export type Screenshot = {
-  src: string; // path under /public, e.g. "/games/fibby/01-intro.webp"
-  alt: string;
-};
+export type Screenshot = { src: string; alt: string };
+export type NameParts = { prefix: string; suffix: string; color: string };
 
 export type Game = {
   slug: string;
   name: string;
+  nameParts?: NameParts;
   tagline: string;
-  /** Where the /games card links. Defaults to /games/<slug>; set this to point
-   * at a standalone landing page (e.g. "/reveal") instead. */
   href?: string;
-  /** App icon shown on the grid card. Path under /public; omit if not ready. */
   icon?: string;
-  /** Short blurb for the /games grid card. */
   summary: string;
-  /** Full description for the detail page (array of paragraphs). */
   description: string[];
   platform: string;
   status: string;
-  /** Live App Store / store URL once published; omit while unreleased. */
   storeUrl?: string;
   screenshots: Screenshot[];
-  /** Per-game legal pages, rendered in the detail page's Legal section.
-   * Omit a field if that page doesn't exist yet. */
   privacyUrl?: string;
   termsUrl?: string;
 };
+
+// Games color: fuchsia #E879F9 — prefix is fuchsia, LYN is white
+const F = "#E879F9";
 
 export const games: Game[] = [
   {
@@ -44,8 +28,7 @@ export const games: Game[] = [
     tagline: "A single-player Fibonacci number puzzle.",
     href: "/fibby",
     icon: "/games/fibby/icon.webp",
-    summary:
-      "Chase high scores across multiple board sizes, with global Game Center leaderboards.",
+    summary: "Chase high scores across multiple board sizes, with global Game Center leaderboards.",
     description: [
       "Fibby is a single-player number puzzle built around the Fibonacci sequence. Place and combine numbers on the board to climb the chain — quick to pick up, hard to put down.",
       "Play across three board sizes for shorter or longer sessions, and push for the top of the global Game Center leaderboards. It's free, privacy-friendly, and needs no account: your progress stays on your device.",
@@ -66,15 +49,15 @@ export const games: Game[] = [
     tagline: "A detective game of cases and daily challenges.",
     href: "/reveal",
     icon: "/games/reveal/icon.webp",
-    summary:
-      "Work through case files, solve daily challenges, and uncover the story.",
+    summary: "Work through case files, solve daily challenges, and uncover the story.",
     description: [
       "Reveal is a detective game built around case files and daily challenges. Read the evidence, follow the leads, and crack each case.",
       "Pick up a new mystery each day, build your detective profile as you go, and play at your own pace — it's privacy-friendly and needs no account, with your progress kept on your device.",
       "Available in English, German, French, Italian, Spanish, and Turkish.",
     ],
     platform: "iPhone & iPad",
-    status: "In store-submission prep",
+    storeUrl: "https://apps.apple.com/app/id6776199155",
+    status: "Available on the App Store",
     screenshots: [
       { src: "/games/reveal/01-home.webp", alt: "Reveal home screen" },
       { src: "/games/reveal/02-gameplay.webp", alt: "Reveal gameplay in progress" },
@@ -84,6 +67,50 @@ export const games: Game[] = [
     ],
     privacyUrl: "/reveal/privacy",
     termsUrl: "/reveal/terms",
+  },
+  {
+    slug: "wordlyn",
+    name: "Wordlyn",
+    nameParts: { prefix: "WORD", suffix: "LYN", color: F },
+    tagline: "A daily word puzzle with a Calynix twist.",
+    summary: "Six attempts to guess the hidden word — new puzzle every day, clean design, no account needed.",
+    description: [],
+    platform: "iPhone & iPad",
+    status: "Coming soon",
+    screenshots: [],
+  },
+  {
+    slug: "bloclyn",
+    name: "Bloclyn",
+    nameParts: { prefix: "BLOC", suffix: "LYN", color: F },
+    tagline: "A block-stacking puzzle that tests your spatial logic.",
+    summary: "Drop and rotate blocks to clear lines and climb the leaderboard — timeless gameplay, fresh look.",
+    description: [],
+    platform: "iPhone & iPad",
+    status: "Coming soon",
+    screenshots: [],
+  },
+  {
+    slug: "nowlyn",
+    name: "Nowlyn",
+    nameParts: { prefix: "NOW", suffix: "LYN", color: F },
+    tagline: "A fast-paced reaction and timing game.",
+    summary: "Tap at exactly the right moment, build your streak, and beat your best — simple to learn, hard to master.",
+    description: [],
+    platform: "iPhone & iPad",
+    status: "Coming soon",
+    screenshots: [],
+  },
+  {
+    slug: "fibbyhex",
+    name: "FibbyHex",
+    nameParts: { prefix: "FIBBY", suffix: "HEX", color: F },
+    tagline: "Fibonacci puzzles on a hexagonal board.",
+    summary: "The Fibby sequence, reimagined on a hex grid — more paths, more strategy, more satisfying combos.",
+    description: [],
+    platform: "iPhone & iPad",
+    status: "Coming soon",
+    screenshots: [],
   },
 ];
 

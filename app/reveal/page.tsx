@@ -87,7 +87,7 @@ export default function RevealLanding() {
             rel="noopener noreferrer"
             className="inline-block rounded-lg border border-foreground/20 px-5 py-2 text-sm font-medium hover:border-foreground/40 transition-colors"
           >
-            Coming soon to the App Store →
+            Download on the App Store →
           </a>
           <p className="mt-2 text-xs text-foreground/50">
             Free · No ads · Optional in-app purchases
