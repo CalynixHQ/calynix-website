@@ -16,9 +16,26 @@ export async function generateMetadata({
   const { slug } = await params;
   const game = getGame(slug);
   if (!game) return {};
+  const description =
+    game.description.length > 0
+      ? game.description[0]
+      : game.summary || game.tagline;
   return {
     title: `${game.name} — Calynix Games`,
-    description: game.tagline,
+    description,
+    alternates: { canonical: `https://calynix.com/games/${slug}` },
+    openGraph: {
+      title: `${game.name} — ${game.tagline}`,
+      description,
+      url: `https://calynix.com/games/${slug}`,
+      siteName: "Calynix",
+      type: "website",
+    },
+    twitter: {
+      card: "summary",
+      title: `${game.name} — ${game.tagline}`,
+      description,
+    },
   };
 }
 

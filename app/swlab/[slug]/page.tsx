@@ -15,9 +15,26 @@ export async function generateMetadata({
   const { slug } = await params;
   const project = getProject(slug);
   if (!project) return {};
+  const description =
+    project.description.length > 0
+      ? project.description[0]
+      : project.summary || project.tagline;
   return {
     title: `${project.name} — Calynix SW Lab`,
-    description: project.tagline,
+    description,
+    alternates: { canonical: `https://calynix.com/swlab/${slug}` },
+    openGraph: {
+      title: `${project.name} — ${project.tagline}`,
+      description,
+      url: `https://calynix.com/swlab/${slug}`,
+      siteName: "Calynix",
+      type: "website",
+    },
+    twitter: {
+      card: "summary",
+      title: `${project.name} — ${project.tagline}`,
+      description,
+    },
   };
 }
 

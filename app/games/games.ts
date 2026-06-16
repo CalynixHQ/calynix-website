@@ -34,7 +34,8 @@ export const games: Game[] = [
       "Play across three board sizes for shorter or longer sessions, and push for the top of the global Game Center leaderboards. It's free, privacy-friendly, and needs no account: your progress stays on your device.",
     ],
     platform: "iPhone & iPad",
-    status: "Submitted to the App Store — coming soon",
+    storeUrl: "https://apps.apple.com/app/fibby-fibonacci-game/id6775974954",
+    status: "Available on the App Store",
     screenshots: [
       { src: "/games/fibby/01-intro.webp", alt: "Fibby intro screen" },
       { src: "/games/fibby/02-modes.webp", alt: "Fibby board size selection" },

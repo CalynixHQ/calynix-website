@@ -7,8 +7,8 @@ export const metadata: Metadata = {
     "Fibby — a single-player Fibonacci number puzzle. Chase high scores across three board sizes with global Game Center leaderboards. Free, no ads, by Calynix Ltd.",
 };
 
-// Live App Store URL once approved; until then the button reads "Coming soon".
-const APP_STORE_URL: string | undefined = undefined;
+const APP_STORE_URL: string | undefined =
+  "https://apps.apple.com/app/fibby-fibonacci-game/id6775974954";
 
 const features = [
   {

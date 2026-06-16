@@ -17,15 +17,36 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Calynix — Creative studio for games, software, and digital experiences",
   description:
-    "Calynix is a creative studio building games, software, and online experiences. Home to Calynix Games.",
+    "Calynix is a creative studio building games, apps, software, and media. Home to Calynix Games (Fibby, Reveal), SW Lab web tools (Signlyn, Chartlyn), and Amazlyn on YouTube.",
+  keywords: [
+    "Calynix",
+    "creative studio",
+    "indie games",
+    "iOS games",
+    "web tools",
+    "software",
+    "Calynix Games",
+    "Fibby",
+    "Reveal",
+    "Signlyn",
+    "Chartlyn",
+  ],
   metadataBase: new URL("https://calynix.com"),
+  alternates: { canonical: "https://calynix.com" },
+  robots: { index: true, follow: true },
   openGraph: {
-    title: "Calynix",
+    title: "Calynix — Creative studio for games, software, and digital experiences",
     description:
-      "A creative studio building games, software, and online experiences.",
+      "A creative studio building games, apps, software, and media. Home to Calynix Games, SW Lab web tools, and Amazlyn on YouTube.",
     url: "https://calynix.com",
     siteName: "Calynix",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Calynix — Creative studio for games, software, and digital experiences",
+    description:
+      "A creative studio building games, apps, software, and media. Home to Calynix Games, SW Lab web tools, and Amazlyn on YouTube.",
   },
 };
 
