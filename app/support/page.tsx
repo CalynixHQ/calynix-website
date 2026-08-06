@@ -8,9 +8,6 @@ export default function Support() {
     <div className="container-page py-16">
       <article className="max-w-3xl">
       <h1 className="text-4xl font-bold tracking-tight">Support</h1>
-      <p className="text-sm text-foreground/60 mt-2">
-        We&apos;re a small team and read every message.
-      </p>
 
       <section className="mt-8 space-y-4 text-foreground/80">
         <h2 className="text-xl font-semibold">Contact us</h2>
