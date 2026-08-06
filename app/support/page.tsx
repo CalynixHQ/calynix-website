@@ -28,6 +28,17 @@ export default function Support() {
           screenshots if relevant).
         </p>
 
+        <h2 className="text-xl font-semibold mt-8">StreamLyn (tvOS)</h2>
+        <p>
+          Having trouble with StreamLyn on your Apple TV? Email{" "}
+          <a href="mailto:info@calynix.com" className="underline font-medium">
+            info@calynix.com
+          </a>{" "}
+          with a description of the issue, your Apple TV model, and the tvOS
+          version (Settings → General → About). We&apos;ll get back to you
+          within two business days.
+        </p>
+
         <h2 className="text-xl font-semibold mt-8">Common requests</h2>
         <ul className="list-disc pl-6 space-y-2">
           <li>

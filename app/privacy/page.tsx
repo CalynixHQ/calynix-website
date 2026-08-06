@@ -69,7 +69,20 @@ export default function Privacy() {
           knowingly collect personal data from children under 13.
         </p>
 
-        <h2 className="text-xl font-semibold mt-8">7. Contact</h2>
+        <h2 className="text-xl font-semibold mt-8">7. StreamLyn (tvOS)</h2>
+        <p>
+          StreamLyn does not collect, transmit, or share any personal data.
+          It does not use analytics, advertising, or crash-reporting SDKs,
+          and makes no network requests to Calynix or any third party. The
+          app stores your preferences and settings only locally on your
+          Apple TV, using standard system storage (UserDefaults and, where
+          applicable, the Keychain). This data never leaves your device and
+          is deleted automatically if you uninstall the app. StreamLyn&apos;s
+          declared data collection to Apple (NSPrivacyCollectedDataTypes) is
+          empty, reflecting that no data is collected.
+        </p>
+
+        <h2 className="text-xl font-semibold mt-8">8. Contact</h2>
         <p>
           Calynix Ltd, 71-75 Shelton Street, Covent Garden, London, WC2H 9JQ,
           United Kingdom. Email:{" "}
@@ -79,7 +92,7 @@ export default function Privacy() {
           .
         </p>
 
-        <h2 className="text-xl font-semibold mt-8">8. Changes</h2>
+        <h2 className="text-xl font-semibold mt-8">9. Changes</h2>
         <p>
           We may update this policy from time to time. Material changes will be
           announced on this page with an updated date.
