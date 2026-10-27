@@ -79,4 +79,14 @@ export const apps: App[] = [
     platform: "iPhone & iPad",
     status: "Coming soon",
   },
+  {
+    slug: "streamlyn",
+    name: "StramLYN",
+    nameParts: { prefix: "STRAM", suffix: "LYN", color: G },
+    tagline: "Bring your own playlist, watch it everywhere.",
+    icon: "/apps/streamlyn/icon.webp",
+    summary: "A pure IPTV player for your own M3U or Xtream playlists — no content included or provided. Group management, favourites, continue watching, and a fast remote-first interface built for the big screen.",
+    platform: "Apple TV, iPhone & iPad",
+    status: "Available on the App Store",
+  },
 ];
