@@ -58,17 +58,6 @@ export const mediaApps: MediaApp[] = [
     status: "Coming soon",
   },
   {
-    slug: "streamlyn",
-    name: "Streamlyn",
-    nameParts: { prefix: "STREAM", suffix: "LYN", color: R },
-    tagline: "Your own IPTV player, done right.",
-    summary: "Bring your own M3U or Xtream playlist and watch on Apple TV, iPhone, or iPad. No bundled channels, no data collection — just a clean player for streams you already have access to.",
-    platform: "Apple TV · iPhone & iPad",
-    status: "Live",
-    storeUrl: "https://apps.apple.com/app/id6793263647",
-    href: "/support",
-  },
-  {
     slug: "songslyn",
     name: "Songslyn",
     nameParts: { prefix: "SONGS", suffix: "LYN", color: R },

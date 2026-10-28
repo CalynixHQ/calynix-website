@@ -18,7 +18,7 @@ export type SwLabProject = {
   screenshots: Screenshot[];
 };
 
-// SW Lab color: teal #2DD4BF — prefix is teal, LYN is white
+// Labs color: teal #2DD4BF — prefix is teal, LYN is white
 const T = "#2DD4BF";
 
 export const swlabProjects: SwLabProject[] = [
@@ -28,6 +28,7 @@ export const swlabProjects: SwLabProject[] = [
     nameParts: { prefix: "SIGN", suffix: "LYN", color: T },
     tagline: "Build and export a professional email signature.",
     href: "/swlab/signlyn",
+    icon: "/swlab/signlyn/icon.svg",
     summary: "Fill in your details, pick a template, and copy the finished HTML straight into Gmail, Outlook, or Apple Mail.",
     description: [
       "Signlyn is a fast, no-account email signature builder. Enter your name, title, company, and contact details, choose a clean template, and get a pixel-perfect HTML signature ready to paste.",
@@ -122,6 +123,7 @@ export const swlabProjects: SwLabProject[] = [
     name: "Chartlyn",
     nameParts: { prefix: "CHART", suffix: "LYN", color: T },
     tagline: "Animated line race charts — free, instant, no account needed.",
+    icon: "/swlab/chartlyn/icon.png",
     summary: "Upload a CSV, pick a style, and export a smooth animated line race chart as PNG or GIF — ready for decks, reports, or social.",
     description: [
       "Chartlyn is a free animated line race chart maker. Upload your CSV data, customise fonts, colours, and speed, and get a smooth animated bar chart race in seconds.",
