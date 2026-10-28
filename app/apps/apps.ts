@@ -1,3 +1,4 @@
+export type Screenshot = { src: string; alt: string };
 export type NameParts = { prefix: string; suffix: string; color: string };
 
 export type App = {
@@ -7,10 +8,15 @@ export type App = {
   tagline: string;
   icon?: string;
   summary: string;
+  description?: string[];
   platform: string;
   status: string;
   storeUrl?: string;
   href?: string;
+  screenshots?: Screenshot[];
+  privacyUrl?: string;
+  termsUrl?: string;
+  supportUrl?: string;
 };
 
 // Apps color: gray #9CA3AF — prefix is gray, LYN is white
@@ -86,10 +92,21 @@ export const apps: App[] = [
     nameParts: { prefix: "STREAM", suffix: "LYN", color: G },
     tagline: "Bring your own playlist, watch it everywhere.",
     icon: "/apps/streamlyn/icon.webp",
+    href: "/apps/streamlyn",
     summary: "A pure IPTV player for your own M3U or Xtream playlists — no content included or provided. Group management, favourites, continue watching, and a fast remote-first interface built for the big screen.",
+    description: [
+      "Streamlyn is a pure IPTV player for Apple TV, iPhone, and iPad — built for people who already have their own M3U playlist or Xtream Codes subscription. No channels or content are bundled or provided by Calynix; you bring the source, Streamlyn plays it.",
+      "Organise channels into groups, mark favourites, and pick up exactly where you left off with continue watching. The interface is remote-first and built around the Apple TV focus engine, so navigation stays fast and natural on the big screen.",
+      "Free to try for 72 hours, then continues with a monthly or yearly subscription, or a one-time lifetime unlock. No ads, no bundled streams — just a fast, clean player for streams you already have access to.",
+    ],
     platform: "Apple TV, iPhone & iPad",
     status: "Live",
     storeUrl: "https://apps.apple.com/app/id6793263647",
-    href: "/streamlyn/support",
+    privacyUrl: "/privacy",
+    supportUrl: "/streamlyn/support",
   },
 ];
+
+export function getApp(slug: string): App | undefined {
+  return apps.find((a) => a.slug === slug);
+}

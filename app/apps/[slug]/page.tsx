@@ -1,0 +1,177 @@
+import Link from "next/link";
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { apps, getApp } from "../apps";
+
+// Only the known app slugs are valid; anything else 404s.
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return apps.map((app) => ({ slug: app.slug }));
+}
+
+export async function generateMetadata({
+  params,
+}: PageProps<"/apps/[slug]">): Promise<Metadata> {
+  const { slug } = await params;
+  const app = getApp(slug);
+  if (!app) return {};
+  const description =
+    app.description && app.description.length > 0
+      ? app.description[0]
+      : app.summary || app.tagline;
+  return {
+    title: `${app.name} — Calynix Apps`,
+    description,
+    alternates: { canonical: `https://calynix.com/apps/${slug}` },
+    openGraph: {
+      title: `${app.name} — ${app.tagline}`,
+      description,
+      url: `https://calynix.com/apps/${slug}`,
+      siteName: "Calynix",
+      type: "website",
+    },
+    twitter: {
+      card: "summary",
+      title: `${app.name} — ${app.tagline}`,
+      description,
+    },
+  };
+}
+
+export default async function AppDetail({
+  params,
+}: PageProps<"/apps/[slug]">) {
+  const { slug } = await params;
+  const app = getApp(slug);
+  if (!app) notFound();
+
+  return (
+    <div className="py-8">
+      <section className="container-page pt-12 pb-8">
+        <Link
+          href="/apps"
+          className="text-sm text-foreground/60 hover:text-foreground"
+        >
+          ← All apps
+        </Link>
+        <div className="mt-6 flex items-center gap-4 sm:gap-5">
+          {app.icon && (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              src={app.icon}
+              alt={`${app.name} app icon`}
+              width={80}
+              height={80}
+              className="h-16 w-16 flex-none rounded-2xl border border-foreground/10 sm:h-20 sm:w-20"
+            />
+          )}
+          <div className="flex flex-1 items-baseline justify-between gap-3">
+            <h1 className="text-4xl sm:text-6xl font-bold tracking-tight">
+              {app.name}
+            </h1>
+            <span className="text-xs uppercase tracking-wide text-foreground/50">
+              {app.platform}
+            </span>
+          </div>
+        </div>
+        <p className="mt-4 text-lg sm:text-xl text-foreground/70 max-w-2xl">
+          {app.tagline}
+        </p>
+        <span className="mt-4 inline-block text-xs uppercase tracking-wide text-foreground/50">
+          {app.status}
+        </span>
+        {app.storeUrl && (
+          <div className="mt-6">
+            <a
+              href={app.storeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block rounded-lg border border-foreground/20 px-5 py-2 text-sm font-medium hover:border-foreground/40 transition-colors"
+            >
+              View on the App Store →
+            </a>
+          </div>
+        )}
+      </section>
+
+      <section className="container-page pb-12 space-y-4 text-foreground/80">
+        {(app.description ?? [app.summary]).map((para, i) => (
+          <p key={i} className="max-w-2xl">
+            {para}
+          </p>
+        ))}
+      </section>
+
+      {app.screenshots && app.screenshots.length > 0 && (
+        <section className="container-page pb-16">
+          <h2 className="text-2xl font-semibold mb-6">Screenshots</h2>
+          <div className="flex gap-4 overflow-x-auto pb-4 snap-x">
+            {app.screenshots.map((shot) => (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                key={shot.src}
+                src={shot.src}
+                alt={shot.alt}
+                width={750}
+                height={1626}
+                loading="lazy"
+                className="h-[480px] w-auto flex-none rounded-xl border border-foreground/10 snap-start"
+              />
+            ))}
+          </div>
+        </section>
+      )}
+
+      {(app.supportUrl || app.privacyUrl || app.termsUrl) && (
+        <section className="container-page pb-4">
+          <h2 className="text-2xl font-semibold mb-4">Support &amp; legal</h2>
+          <ul className="space-y-2 text-foreground/70">
+            {app.supportUrl && (
+              <li>
+                <Link
+                  href={app.supportUrl}
+                  className="underline hover:no-underline"
+                >
+                  Support
+                </Link>
+              </li>
+            )}
+            {app.privacyUrl && (
+              <li>
+                <Link
+                  href={app.privacyUrl}
+                  className="underline hover:no-underline"
+                >
+                  Privacy Policy
+                </Link>
+              </li>
+            )}
+            {app.termsUrl && (
+              <li>
+                <Link
+                  href={app.termsUrl}
+                  className="underline hover:no-underline"
+                >
+                  Terms of Service
+                </Link>
+              </li>
+            )}
+          </ul>
+        </section>
+      )}
+
+      <section className="container-page py-12 border-t border-foreground/10">
+        <p className="text-foreground/70">
+          Press and partnership enquiries:{" "}
+          <a
+            href="mailto:info@calynix.com"
+            className="underline hover:no-underline"
+          >
+            info@calynix.com
+          </a>
+        </p>
+      </section>
+    </div>
+  );
+}
