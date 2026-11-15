@@ -41,7 +41,7 @@ export default function BattlynPrivacy() {
 
           <h2 className="text-xl font-semibold mt-8">Purchases</h2>
           <p>
-            If you buy credits or the &quot;All maps&quot; unlock, Apple handles
+            If you buy credits or the &quot;Unlimited&quot; pass, Apple handles
             the payment. We never see your payment details. Apple tells the game
             that a purchase was made so it can add your credits or unlock the
             maps.

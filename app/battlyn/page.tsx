@@ -128,8 +128,8 @@ export default function BattlynLanding() {
         </p>
         <p className="max-w-2xl">
           Each campaign uses one credit. You start with credits and get a free
-          credit every day. Credit packs and an &ldquo;All maps&rdquo; unlock
-          are optional purchases.
+          credit every day. Credit packs and the one-time &ldquo;Unlimited&rdquo;
+          pass (all maps and every campaign) are optional purchases.
         </p>
       </section>
 

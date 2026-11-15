@@ -18,7 +18,7 @@ const products = [
         a: "You get one free credit each day you open the game. You can also buy credit packs from Credits on the main screen.",
       },
       {
-        q: "I bought “All maps” on a new phone.",
+        q: "I bought “Unlimited” on a new phone.",
         a: "Open Credits and tap Restore Purchases.",
       },
       {

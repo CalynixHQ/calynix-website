@@ -30,8 +30,10 @@ export default function BattlynTerms() {
             A new campaign uses one credit. Credits bought with real money never
             expire and have no cash value. They are kept on your device. If you
             delete the game, the credits on that device are lost, so please do
-            not delete it if you want to keep them. &quot;Restore
-            Purchases&quot; brings back the &quot;All maps&quot; unlock.
+            not delete it if you want to keep them. &quot;Unlimited&quot; is a
+            one-time purchase that opens all maps and makes every campaign
+            free; &quot;Restore Purchases&quot; brings it back on any of your
+            devices.
           </p>
 
           <h2 className="text-xl font-semibold mt-8">3. Free credits</h2>
