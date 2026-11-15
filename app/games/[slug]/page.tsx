@@ -123,7 +123,7 @@ export default async function GameDetail({
         </section>
       )}
 
-      {(game.privacyUrl || game.termsUrl) && (
+      {(game.privacyUrl || game.termsUrl || game.supportUrl) && (
         <section className="container-page pb-4">
           <h2 className="text-2xl font-semibold mb-4">Legal</h2>
           <ul className="space-y-2 text-foreground/70">
@@ -144,6 +144,16 @@ export default async function GameDetail({
                   className="underline hover:no-underline"
                 >
                   Terms of Service
+                </Link>
+              </li>
+            )}
+            {game.supportUrl && (
+              <li>
+                <Link
+                  href={game.supportUrl}
+                  className="underline hover:no-underline"
+                >
+                  Support
                 </Link>
               </li>
             )}

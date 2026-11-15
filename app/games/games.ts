@@ -16,6 +16,8 @@ export type Game = {
   screenshots: Screenshot[];
   privacyUrl?: string;
   termsUrl?: string;
+  supportUrl?: string;
+  accent?: string;
 };
 
 // Games color: fuchsia #E879F9 — prefix is fuchsia, LYN is white
@@ -43,6 +45,8 @@ export const games: Game[] = [
       { src: "/games/fibby/04-gameplay.webp", alt: "Fibby gameplay in progress" },
     ],
     privacyUrl: "/fibby/privacy",
+    termsUrl: "/fibby/terms",
+    supportUrl: "/support#fibby",
   },
   {
     slug: "reveal",
@@ -68,6 +72,34 @@ export const games: Game[] = [
     ],
     privacyUrl: "/reveal/privacy",
     termsUrl: "/reveal/terms",
+    supportUrl: "/support#reveal",
+  },
+  {
+    slug: "battlyn",
+    name: "Battlyn",
+    nameParts: { prefix: "BATT", suffix: "LYN", color: "#C2410C" },
+    accent: "#C2410C",
+    tagline: "Swords & spears strategy",
+    href: "/battlyn",
+    icon: "/battlyn/icon.webp",
+    summary: "Claim lands, plan your formation and win five levels in blind, 7-minute wars across twelve maps.",
+    description: [
+      "Battlyn is a single-player strategy war game. Every war lasts 40 turns or 7 minutes, and the highest score wins. Claim free lands, scout your rival, and attack when you are ready.",
+      "Choose the weapon for every rank, send more men to the levels that matter, and win duels with your champion. No sign-in, no ads: your progress stays on your device.",
+    ],
+    platform: "iPhone & iPad",
+    status: "Coming soon",
+    screenshots: [
+      { src: "/battlyn/01.webp", alt: "Battlyn main menu" },
+      { src: "/battlyn/02.webp", alt: "A Battlyn land card" },
+      { src: "/battlyn/03.webp", alt: "Planning a formation in Battlyn" },
+      { src: "/battlyn/04.webp", alt: "A Battlyn champion duel" },
+      { src: "/battlyn/05.webp", alt: "A Battlyn battle in progress" },
+      { src: "/battlyn/06.webp", alt: "The Battlyn world map" },
+    ],
+    privacyUrl: "/battlyn/privacy",
+    termsUrl: "/battlyn/terms",
+    supportUrl: "/support#battlyn",
   },
   {
     slug: "wordlyn",
@@ -101,6 +133,7 @@ export const games: Game[] = [
     ],
     privacyUrl: "/bloclyn/privacy",
     termsUrl: "/bloclyn/terms",
+    supportUrl: "/support#bloclyn",
   },
   {
     slug: "nowlyn",

@@ -9,7 +9,7 @@ export default function Terms() {
       <article className="max-w-3xl">
       <h1 className="text-4xl font-bold tracking-tight">Terms of Use</h1>
       <p className="text-sm text-foreground/60 mt-2">
-        Last updated: 22 May 2026
+        Last updated: 15 November 2026
       </p>
 
       <section className="mt-8 space-y-4 text-foreground/80">
@@ -39,6 +39,12 @@ export default function Terms() {
           at install or first launch, and by the terms of the platform on
           which they are distributed (such as the Apple App Store).
         </p>
+        <ul className="list-disc pl-6 space-y-1">
+          <li><a href="/battlyn/terms" className="underline">BATTLYN terms</a></li>
+          <li><a href="/fibby/terms" className="underline">Fibby terms</a></li>
+          <li><a href="/reveal/terms" className="underline">Reveal terms</a></li>
+          <li><a href="/bloclyn/terms" className="underline">BLOCLYN terms</a></li>
+        </ul>
 
         <h2 className="text-xl font-semibold mt-8">4. No warranties</h2>
         <p>

@@ -169,8 +169,18 @@ export default function FibbyLanding() {
         </p>
         <ul className="mt-4 space-y-2 text-foreground/70">
           <li>
+            <Link href="/support#fibby" className="underline hover:no-underline">
+              Support
+            </Link>
+          </li>
+          <li>
             <Link href="/fibby/privacy" className="underline hover:no-underline">
               Privacy Policy
+            </Link>
+          </li>
+          <li>
+            <Link href="/fibby/terms" className="underline hover:no-underline">
+              Terms of Service
             </Link>
           </li>
         </ul>

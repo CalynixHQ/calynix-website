@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { games } from "../games/games";
 
 const social = [
   { name: "Instagram", href: "https://instagram.com/calynix" },
@@ -10,7 +11,7 @@ const social = [
 export default function Footer() {
   return (
     <footer className="border-t border-foreground/10 py-10 text-[0.89rem] text-foreground/60">
-      <div className="container-page grid grid-cols-1 gap-7 sm:grid-cols-3">
+      <div className="container-page grid grid-cols-1 gap-7 sm:grid-cols-4">
         <div>
           <p className="font-semibold text-foreground">Calynix Ltd</p>
           <ul className="mt-3 space-y-2">
@@ -49,6 +50,38 @@ export default function Footer() {
                 Terms
               </Link>
             </li>
+          </ul>
+        </div>
+
+        <div>
+          <p className="font-semibold text-foreground">Game policies</p>
+          <ul className="mt-3 space-y-2">
+            {games
+              .filter((g) => g.privacyUrl)
+              .map((g) => (
+                <li key={g.slug}>
+                  {g.name}:{" "}
+                  <Link href={g.privacyUrl!} className="hover:text-foreground">
+                    Privacy
+                  </Link>
+                  {g.termsUrl && (
+                    <>
+                      {" · "}
+                      <Link href={g.termsUrl} className="hover:text-foreground">
+                        Terms
+                      </Link>
+                    </>
+                  )}
+                  {g.supportUrl && (
+                    <>
+                      {" · "}
+                      <Link href={g.supportUrl} className="hover:text-foreground">
+                        Support
+                      </Link>
+                    </>
+                  )}
+                </li>
+              ))}
           </ul>
         </div>
 

@@ -14,6 +14,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/support`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.3 },
     { url: `${BASE}/privacy`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.2 },
     { url: `${BASE}/terms`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.2 },
+    { url: `${BASE}/battlyn`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.8 },
+    { url: `${BASE}/battlyn/privacy`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.2 },
+    { url: `${BASE}/battlyn/terms`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.2 },
+    { url: `${BASE}/fibby`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.8 },
+    { url: `${BASE}/fibby/privacy`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.2 },
+    { url: `${BASE}/fibby/terms`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.2 },
+    { url: `${BASE}/reveal`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.8 },
+    { url: `${BASE}/reveal/privacy`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.2 },
+    { url: `${BASE}/reveal/terms`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.2 },
+    { url: `${BASE}/bloclyn/privacy`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.2 },
+    { url: `${BASE}/bloclyn/terms`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.2 },
+    { url: `${BASE}/streamlyn/support`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.3 },
   ];
 
   const swlabRoutes: MetadataRoute.Sitemap = swlabProjects.map((p) => ({

@@ -162,6 +162,11 @@ export default function RevealLanding() {
         </p>
         <ul className="mt-4 space-y-2 text-foreground/70">
           <li>
+            <Link href="/support#reveal" className="underline hover:no-underline">
+              Support
+            </Link>
+          </li>
+          <li>
             <Link href="/reveal/privacy" className="underline hover:no-underline">
               Privacy Policy
             </Link>

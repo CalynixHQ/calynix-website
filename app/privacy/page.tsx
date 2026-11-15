@@ -9,7 +9,7 @@ export default function Privacy() {
       <article className="max-w-3xl prose prose-neutral dark:prose-invert">
       <h1 className="text-4xl font-bold tracking-tight">Privacy Policy</h1>
       <p className="text-sm text-foreground/60 mt-2">
-        Last updated: 22 May 2026
+        Last updated: 15 November 2026
       </p>
 
       <section className="mt-8 space-y-4 text-foreground/80">
@@ -31,6 +31,12 @@ export default function Privacy() {
           identifiers, gameplay data, and crash reports. Each app has its own
           in-app privacy notice with specifics.
         </p>
+        <ul className="list-disc pl-6 space-y-1">
+          <li><a href="/battlyn/privacy" className="underline">BATTLYN privacy policy</a></li>
+          <li><a href="/fibby/privacy" className="underline">Fibby privacy policy</a></li>
+          <li><a href="/reveal/privacy" className="underline">Reveal privacy policy</a></li>
+          <li><a href="/bloclyn/privacy" className="underline">BLOCLYN privacy policy</a></li>
+        </ul>
         <p>
           <strong>Email:</strong> if you contact us at info@calynix.com, we
           retain your message and email address solely to respond.
